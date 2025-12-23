@@ -52,7 +52,7 @@ Both binary and `roms/` (with `bootrom.gb` file inside it) should be in same dir
 ## Compilation/Development Instructions
 
 You need to have `cmake` and `clang` in order to build the project.
-You also need `python`, `poetry`, `jinja` and optionally `clang-format` for auto-generating the CPU Backend and/or testing the project with JSON Tests.
+You also need `python`, `poetry` and optionally `clang-format` for auto-generating the CPU Backend and/or testing the project with JSON Tests.
 
 Firstly, clone this repo *along with* its submodules.
 Then run the following command:

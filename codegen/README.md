@@ -1,11 +1,11 @@
 # Codegen
 
 A python code generation script for generating instruction handlers for my C based Gameboy Emulator's CPU.
-Any change you need to make to the backend should take place either in the main script or inside the templates.
+Any change you need to make to the backend should take place either in the main script or inside the template.
 
 ## Usage Instructions
 
-Fistly install `jinja`, `poetry` and `clang-format`.
+Firstly install `poetry` and `clang-format`.
 Once done `cd` to the root of this project and run the `export.sh` script.
 
 ```
@@ -37,10 +37,6 @@ The `export.sh` script OVERWRITES the file you pass to it so be careful while pa
 There is a security mechanism in place, the script checks for the `#define __AUTOGEN__` header before overwriting
 so it won't overwrite if the header is missing. It is also NOT recommended to put the header anywhere other than
 the file you want to be populated with auto-generated content.
-
-## and Finally...
-
-Yeah i know the script is really messy and hacky. I will be trying to make it cleaner in near future.
 
 *The script uses data from dmgops.json which is sourced from https://github.com/izik1/gbops for its code generation.*
 

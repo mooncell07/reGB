@@ -1,6 +1,6 @@
 [project]
 name = "codegen"
-version = "0.1.0"
+version = "0.2.0"
 description = "A Script for generating handlers for Gameboy CPU Instructions in C."
 authors = [
     {name = "Nova",email = "mooncell07@proton.me"}
@@ -8,7 +8,6 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "jinja2 (>=3.1.6,<4.0.0)"
 ]
 
 

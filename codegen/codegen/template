@@ -57,18 +57,18 @@ void push(State *self, uint16_t data) {
 
 // --------------- OPCODE HANDLERS ---------------
 
-{{ slots.HANDLERS }}
+$SLOT_HANDLERS
 
 // --------------- Lookup Tables -----------------
 
 void attachPrefixed(Backend *self) {
   fnptr *LUT = self->PREFIXED;
-  {{ slots.PREFIXED_LUT }}
+  $SLOT_PREFIXED
 }
 
 void attachUnPrefixed(Backend *self) {
   fnptr *LUT = self->UNPREFIXED;
-  {{ slots.UNPREFIXED_LUT }}
+  $SLOT_UNPREFIXED
 }
 
 
@@ -127,5 +127,3 @@ void backendTick(Backend *self) {
   self->UNPREFIXED[self->state.opcode](&self->state);
   }
 }
-
-

@@ -1,6 +1,0 @@
-{% macro gen_flags(instr) %}
-    {% if instr.z_flag is not none %}Zf({{ instr.z_flag }});{% endif %}
-    {% if instr.n_flag is not none %}Nf({{ instr.n_flag }});{% endif %}
-    {% if instr.h_flag is not none %}Hf({{ instr.h_flag }});{% endif %}
-    {% if instr.c_flag is not none %}Cf({{ instr.c_flag }});{% endif %}
-{% endmacro %}
