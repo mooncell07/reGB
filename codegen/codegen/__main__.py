@@ -27,27 +27,6 @@ class OperandPosition(IntEnum):
     LEFT = auto()
     RIGHT = auto()
 
-
-class AddressingMode(IntEnum):
-    NONE = auto()  # INVALID
-    IMPLIED = auto()  # INSTR
-    REGISTER = auto()  # INSTR R
-    REGISTER_REGISTER = auto()  # INSTR R,R
-    REGISTER_IMMEDIATE = auto()  # INSTR R,N
-    REGISTERPAIR = auto()  # INSTR RR
-    REGISTERPAIR_REGISTERPAIR = auto()  # INSTR RR,RR
-    REGISTERPAIR_IMMEDIATE16 = auto()  # INSTR RR,NN
-    REGISTER_DEREF_REGISTERPAIR = auto()  # INSTR R,(RR)
-    DEREF_REGISTERPAIR = auto()  # INSTR (RR)
-    DEREF_REGISTERPAIR_REGISTER = auto()  # INSTR (RR),R
-    U3_REGISTER = auto()  # INSTR U3,R
-    U3_DEREF_REGISTERPAIR = auto()  # INSTR U3,(RR)
-    DEREF_REGISTERPAIR_IMMEDIATE = auto()  # INSTR (RR),N
-    DEREF_IMMEDIATE16_REGISTER = auto()  # INSTR (U16),R
-    DEREF_IMMEDIATE16_REGISTERPAIR = auto()  # INSTR (U16), RR
-    REGISTER_DEREF_IMMEDIATE16 = auto()  # INSTR R,(U16)
-
-
 class InstructionType(IntEnum):
     IMPLIED = 0
     UNARY = 1
